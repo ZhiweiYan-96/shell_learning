@@ -1,4 +1,4 @@
-# shell_learning
+# Learning Shell
 Code for Learning Shelling
 
 Every file are related to a specific topic.
