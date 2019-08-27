@@ -1,6 +1,6 @@
 # Learning Shell
 Code for Learning Shelling
 
-Every file are related to a specific topic.
+Every file is related to a specific topic.
 
-Important thing are shown in the comments of scripts.
+Important things are shown in comments of scripts.
