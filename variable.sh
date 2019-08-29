@@ -31,3 +31,12 @@ unset hello
 #Since hello is deleted, there will be no output 
 echo $hello 
 
+#String 
+#Single quote : varaible cannot be used in single quote 
+str='this is a string'
+
+#Double quote: variable and escape character are allowed in double quote
+your_name='hello'
+str="Hello, I know your are \"$your_name\"!\n"
+echo -e $str
+
