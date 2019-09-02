@@ -61,3 +61,19 @@ echo ${string:1:4}
 #find substring, output the location of finded substring
 string="runnob is a great site"
 echo `expr index "$string" io`
+
+#array 
+arr=(1,2,3)
+
+arr[0]=2
+echo $arr 
+echo ${arr[0]}
+
+#get all element 
+echo ${arr[@]}
+
+#get length 
+length=${#arr[@]}
+length_1=${#arr[*]}
+echo $length 
+echo $length_1
