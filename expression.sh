@@ -1,4 +1,4 @@
-#!/bin/bash 
+#/bin/bash 
 
 #space must be included between operator and variable
 val=`expr 2 + 2`
@@ -21,3 +21,22 @@ then
 else 
     echo "$a -eq $b : a not equals b"
 fi 
+
+#boolean operation 
+a=10 
+b=20 
+if [ $a != $b ]
+then 
+    echo "$a != $b: a not equals b "
+else 
+    echo " $a == $b : a equals b "
+fi 
+
+if [ $a -lt 100 -a $b -gt 15 ] 
+then  
+    echo " $a less than 100 and $b bigger than 15: return true"
+else 
+    echo "$a less than 100 and $b bigger than 15: return false"
+fi
+
+ 
