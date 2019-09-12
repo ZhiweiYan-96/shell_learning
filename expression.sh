@@ -23,6 +23,9 @@ else
 fi 
 
 #boolean operation 
+# ! not operation, if true return false, if false return true 
+# -o or operation
+# -a and operation 
 a=10 
 b=20 
 if [ $a != $b ]
@@ -39,4 +42,30 @@ else
     echo "$a less than 100 and $b bigger than 15: return false"
 fi
 
- 
+#logic operation 
+# && logical and operation 
+# || logical or  
+a=10 
+b=20 
+
+if [[ $a -lt 100 && $b -gt 100 ]]
+then 
+    echo "Return True"
+else 
+    echo "Returan false"
+fi 
+
+if [[ $a -lt 100 || $b -gt 100 ]]
+then 
+    echo "Return True"
+else 
+    echo "Returan False"
+fi 
+
+# Operator for string 
+# = judge whether two string are equal 
+# != judge wheter two string are not equal 
+# -z test whether the length of a string is 0, if the length is 0, retuan True 
+# -n test whether thel length of a string is 0, if the length is 0, return False 
+# $ test whether a string is empty. If the length is not empty, return True 
+
