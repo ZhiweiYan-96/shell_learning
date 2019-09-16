@@ -77,3 +77,55 @@ length=${#arr[@]}
 length_1=${#arr[*]}
 echo $length 
 echo $length_1
+
+#file test expression 
+file="argument.sh"
+if [ -r $file ] # test whether file is readable 
+then 
+    echo "File is readable"
+else
+    echo "File is not readable"
+fi 
+
+if [ -w $file ] 
+then 
+    echo "File is writeable"
+else
+    echo "File is not writeable"
+fi 
+
+if [ -x $file ]
+then 
+    echo "File is executable"
+else
+    echo "File is not executable"
+fi 
+   
+if [ -f $file ]
+then 
+    echo " File is a regular file"
+else
+    echo " File is not a regular file"
+fi 
+
+if [ -d $file ]
+then 
+    echo "File is a directory"
+else
+    echo "File is not a directory"
+fi 
+
+if [ -s $file ] 
+then 
+    echo "File is not empty"
+else
+    echo "File is empty"
+fi 
+
+if [ -e $file ] 
+then 
+    echo "File exists"
+else 
+    echo "File doesnot exists"
+fi 
+ 
