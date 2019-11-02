@@ -61,18 +61,6 @@
 #   - written by 'terminalforlife' (AKA: 'Learn Linux')
 #----------------------------------------------------------------------------------
 
-# If statement:
-#
-#   if condition1
-#   then
-#   	commands
-#   elif condition2
-#   then
-#   	commands
-#   else
-#   	commands
-#   fi
-
 a=10
 b=20
 if [ $a -eq $b ]
@@ -104,7 +92,7 @@ fi
 # commands. This set of commands can even vary based on which item is currently
 # being processed.
 #
-# There are two main loops in shell, 'for' and 'while'. There is an 'until' loop
+# There are two main loops in shell: 'for' and 'while'. There is an 'until' loop
 # but since it's just the opposite of 'while', it doesn't seem often used.
 #
 # A for loop uses a special variable to which data is assigned the contents of the
@@ -113,18 +101,37 @@ fi
 #
 # The formatting of a for loop can vary quite a bit. Here are some approaches:
 #
-#   for loop in 
+#   for value in list; do
+#   	commands
+#   done
+#
+#   for value in list; {
+#   	commands
+#   }
+#
+# The following is the by-the-book approach.
+#
+#   for value in list
+#   do
+#   	commands
+#   done
+#
+# While the formatting below is by-the-book, the use of braces here is just an
+# arguably-cleaner, C-style syntax and also found in various other languages, such
+# as Perl.
+#
+#   for value in list
+#   {
+#   	commands
+#   }
+#
+# There are two flow-control keywords very useful to all loops in shell; these are
+# 'break' and 'continue', the former of which will immediately and completely break
+# out of a loop, while the latter will merely skip the remaining code in the
+# current iteration, in order to continue to the next item in the list.
 #
 #   - written by 'terminalforlife' (AKA: 'Learn Linux')
 #----------------------------------------------------------------------------------
-
-# For loop:
-#
-#   for var in item1 item2 ... itemN
-#   do
-#   	command1
-#   	command2
-#   done
 
 for var in 1 2 3 4 5
 do
