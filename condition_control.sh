@@ -149,7 +149,8 @@ done
 
 #----------------------------------------------------------------------------------
 # A while loop is ideal for the situations in which you wish to iterate the same
-# block of code until the condition(s) no longer applies.
+# block of code until the condition(s) no longer applies. The conditions themselves
+# use almost all of the same features as found in an if statement.
 #
 # The formatting of a while loop is very similar to a for loop, but sadly does not
 # support the use of braces in the same manner.
