@@ -130,6 +130,10 @@ fi
 # out of a loop, while the latter will merely skip the remaining code in the
 # current iteration, in order to continue to the next item in the list.
 #
+# The condition part of a for loop holds many similarities to those found in an
+# if statement, but it's also worth noting that the condition itself can be written
+# with C-style syntax. For example: '((i=1;i<5;i++))'
+#
 #   - written by 'terminalforlife' (AKA: 'Learn Linux')
 #----------------------------------------------------------------------------------
 
@@ -143,12 +147,31 @@ do
 	echo $str
 done
 
-# While loop:
+#----------------------------------------------------------------------------------
+# A while loop is ideal for the situations in which you wish to iterate the same
+# block of code until the condition(s) no longer applies.
 #
-#   while condition
-#   do
-#   	command
-#   done
+# The formatting of a while loop is very similar to a for loop, but sadly does not
+# support the use of braces in the same manner.
+#
+# The by-the-book approach to a while loop is as follows:
+#
+#	while condition
+#	do
+#		commands
+#	done
+#
+# A common approach, similar to other blocks in shell, is:
+#
+#	while condition; do
+#		commands
+#	done
+#
+# The same aforementioned keywords able to be used in a for loop, remember, can
+# also be used within a while loop.
+#
+#   - written by 'terminalforlife' (AKA: 'Learn Linux')
+#----------------------------------------------------------------------------------
 
 int=1
 while(($int<=5))
