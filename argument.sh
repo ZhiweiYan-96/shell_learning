@@ -49,11 +49,11 @@ echo "Last background process PID: %!"
 # $@ refers to three cmd line args 
 echo "-- \$i example"
 for i in $*; do 
-    echo $i 
+	echo $i 
 done 
 
 echo "-- \$@ example"
 for i in $@; do 
-   echo $i 
+	echo $i 
 done 
 
